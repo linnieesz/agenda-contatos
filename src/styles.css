@@ -1,0 +1,14 @@
+:root {
+    --blue: #6ec0ec;
+    --light-blue: #aad8f1;
+    font-family: 'Inter', sans-serif; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #D9EDF9;
+    height: 100%;
+    width: 100%;
+}
+

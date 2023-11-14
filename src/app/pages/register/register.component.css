@@ -1,0 +1,44 @@
+.register-body {
+    width: 30em;
+    height: 28.5em;
+    background-color: #F0F9FD;
+    border-radius: 10%;
+    margin-top: 2.5em;
+    margin-left: 34%;
+    margin-right: 34%;
+    text-align: center;
+}
+
+.register-title {
+    padding-top: 5%;
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.input-register {
+    margin-top: 5%;
+    margin-left: 22%;
+    text-align: left;
+}
+
+.input-register input {
+    border: none;
+    border-radius: 10px;
+    width: 16em;
+    padding: 2%;
+    font-size: 1em;
+}
+
+.register-button {
+    margin-top: 5%;
+}
+
+.register-button button{
+    padding: 1em 3.5em;
+    border: none;
+    border-radius: 0.5em;
+    color: #fff;
+    background-color: var(--blue);
+    font-weight: 700;
+}

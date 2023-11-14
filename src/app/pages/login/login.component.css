@@ -1,0 +1,56 @@
+.login-body {
+    width: 30em;
+    height: 28.5em;
+    background-color: #F0F9FD;
+    border-radius: 10%;
+    margin-top: 2.5em;
+    margin-left: 34%;
+    margin-right: 34%;
+    text-align: center;
+}
+
+.login-title {
+    padding-top: 15%;
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.input-top {
+    margin-top: 5%;
+}
+
+.input-login {
+    border: none;
+    border-radius: 10px;
+    width: 16em;
+    padding: 2%;
+    margin-top: 8%;
+    font-size: 1em;
+}
+
+.login-link {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.login-link a {
+    color: #000;
+    padding: 3.5em;
+}
+
+.login-button button{
+    padding: 1em 3.5em;
+    border: none;
+    border-radius: 0.5em;
+    color: #fff;
+    background-color: var(--blue);
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .login-body {
+        margin-left: 28%;
+    }
+    
+}

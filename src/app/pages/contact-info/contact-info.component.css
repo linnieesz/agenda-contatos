@@ -1,0 +1,53 @@
+.contact-body {
+    width: 95%;
+    height: 32em;
+    background-color: #AAD7F1;
+    margin-top: 1.5em;
+    margin-left: 3%;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.contact-form {
+    width: 65%;
+    float: right;
+    margin-top: 3em;
+}
+
+.title {
+    margin-bottom: 1%;
+}
+.pair {
+    display: flex;
+}
+
+.top {
+    margin-top: 5%;
+}
+
+.block {
+    text-align: start;
+    margin-right: 30%;
+}
+
+.contact-input {
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding: 5% 28% 5% 3%;
+}
+
+.contact-notes {
+    margin-top: 8%;
+    text-align: left;
+}
+
+.contact-notes textarea {
+    width: 86%;
+    height: 8em;
+    padding: 1em;
+    float: left;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
