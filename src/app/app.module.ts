@@ -9,6 +9,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { ContactInfoComponent } from './pages/contact-info/contact-info.component';
 import { AboutComponent } from './pages/about/about.component';
+import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AboutComponent } from './pages/about/about.component';
     RegisterComponent,
     HeaderComponent,
     ContactInfoComponent,
-    AboutComponent
+    AboutComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
