@@ -4,30 +4,36 @@
     </div>
     <div class="register-content">
 
-        <div class="input-top input-register">
-            <div>Nome:</div>
-            <input>
-        </div>
-
-        <div class="input-register">
-            <div>E-mail:</div>
-            <input>
-        </div>
-
-        <div class="input-register">
-            <div>Senha:</div>
-            <input>
-        </div>
-
-        <div class="input-register">
-            <div>Confirme sua senha:</div>
-            <input>
-        </div>
-
-
-
-        <div class="register-button">
-            <button>Cadastrar</button>
-        </div>
+        <form (ngSubmit)="registerUser()">
+            <div class="input-top input-register">
+                <div>Nome:</div>
+                <input type="text" id="username" [(ngModel)]="user.name" name="username" required>
+            </div>
+    
+            <div class="input-register">
+                <div>E-mail:</div>
+                <input type="text" id="email" [(ngModel)]="user.email" name="email" required>
+            </div>
+    
+            <div class="input-register">
+                <div>Senha:</div>
+                <input type="password" id="password" [(ngModel)]="user.password" name="password" required>
+            </div>
+    
+            <div class="input-register">
+                <div>Confirme sua senha:</div>
+                <input type="password" id="passwordConfirm" [(ngModel)]="passwordConfirm" name="passwordConfirm" required>
+            </div>
+    
+    
+    
+            <div class="register-button">
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
     </div>
 </div>
+
+<!-- <div class="card">
+    <p-messages [()]></p-messages>
+</div> -->

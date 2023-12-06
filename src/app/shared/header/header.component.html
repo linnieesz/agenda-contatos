@@ -1,10 +1,11 @@
-<div class="header-body" *ngIf="router.url != '/login' && router.url != '/cadastro'">
+<div class="header-body" *ngIf="router.url != '/login' && router.url != '/cadastro' && router.url != ''">
     <div class="header-title">
-        <a href="/home">{{ title }}</a>
+        <a href="/home">Agenda de Contatos</a>
     </div>
 
     <div class="header-nav">
-        <div><a href="/novo-contato">Novo</a></div>
+        <div><a style="background-color: var(--light-blue);" href="/novo-contato">Novo</a></div>
+        <div><a href="/agenda-contatos">Agenda</a></div>
         <div><a href="/perfil">Perfil</a></div>
         <div><a href="/sobre">Sobre</a></div>
     </div>

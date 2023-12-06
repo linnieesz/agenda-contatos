@@ -1,0 +1,6 @@
+{
+  "/api": {
+    "target": "http://9186-2804-14c-a988-80c5-00-387f.ngrok-free.app",
+    "secure": false
+  }
+}

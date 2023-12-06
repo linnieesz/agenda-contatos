@@ -20,6 +20,9 @@
     margin-top: 5%;
 }
 
+.input-bottom {
+    margin-bottom: 1.5em;
+}
 .input-login {
     border: none;
     border-radius: 10px;
@@ -30,13 +33,15 @@
 }
 
 .login-link {
-    margin-top: 1.5em;
     margin-bottom: 2em;
+}
+
+.link-right {
+    margin-right: 7em;
 }
 
 .login-link a {
     color: #000;
-    padding: 3.5em;
 }
 
 .login-button button{

@@ -3,23 +3,26 @@
         Olá! Faça seu login
     </div>
     <div class="login-content">
+        <form (ngSubmit)="login()">
 
-        <div class="input-top">
-            <input placeholder="Usuário" class="input-login">
-        </div>
+            <div class="input-top">
+                <input type="text" id="username" [(ngModel)]="username" name="username" placeholder="Usuário" class="input-login" required>
+            </div>
+    
+            <div class="input-bottom">
+                <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Senha" class="input-login" required>
+            </div>
+    
+            <div class="login-link">
+                <a href="/login" class="link-right">Esqueci a senha</a>
+    
+                <a href="/cadastro">Cadastro</a>
+            </div>
+    
+            <div class="login-button">
+                <button type="submit">Login</button>
+            </div>
 
-        <div>
-            <input placeholder="Senha" class="input-login">
-        </div>
-
-        <div class="login-link">
-            <a href="">Esqueci a senha</a>
-
-            <a href="/cadastro">Cadastro</a>
-        </div>
-
-        <div class="login-button">
-            <button>Login</button>
-        </div>
+        </form>
     </div>
 </div>
