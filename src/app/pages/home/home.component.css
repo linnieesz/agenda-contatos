@@ -1,0 +1,19 @@
+.home-body {
+    background: var(--light-blue);
+    border-radius: 2em;
+    width: 90%;
+    margin: 2em auto;
+    display: flex;
+    align-items: center;
+}
+
+.hello-message {
+    display: inline-block;
+    margin-left: 10em;
+    text-align: center;
+}
+
+.image-home {
+    display: inline-block;
+    margin-left: 15em;
+}

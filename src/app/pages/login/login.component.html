@@ -1,16 +1,29 @@
+<div *ngIf="registerSuccess" class="success-msg">
+    <i class="fa fa-check"></i>
+    Registrado com sucesso.
+</div>
+
+<div *ngIf="registerError" class="error-msg">
+    <i class="fa fa-times-circle"></i>
+    Algo deu errado.
+</div>
+
 <div class="login-body">
     <div class="login-title">
         Olá! Faça seu login
     </div>
     <div class="login-content">
-        <form (ngSubmit)="login()">
+        <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
 
             <div class="input-top">
-                <input type="text" id="username" [(ngModel)]="username" name="username" placeholder="Usuário" class="input-login" required>
+                <input type="text" id="username" formControlName="username" name="username" placeholder="Usuário" class="input-login" required>
+                <div class="text-danger" *ngIf="isFormControlInvalid('username')">O usuário deve conter pelo menos 5 caracteres</div>
             </div>
     
             <div class="input-bottom">
-                <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Senha" class="input-login" required>
+                <input type="password" id="password" formControlName="password" name="password" placeholder="Senha" class="input-login" required>
+                <div class="text-danger" *ngIf="isFormControlInvalid('password')">A senha deve conter pelo menos 5 caracteres</div>
+    
             </div>
     
             <div class="login-link">

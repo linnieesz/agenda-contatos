@@ -1,6 +1,6 @@
 .login-body {
     width: 30em;
-    height: 28.5em;
+    height: 29em;
     background-color: #F0F9FD;
     border-radius: 10%;
     margin-top: 2.5em;
@@ -51,6 +51,12 @@
     color: #fff;
     background-color: var(--blue);
     font-weight: 700;
+}
+
+.text-danger {
+    color: #f00;
+    font-size: 12px;
+    margin-top: 1em;
 }
 
 @media (max-width: 900px) {

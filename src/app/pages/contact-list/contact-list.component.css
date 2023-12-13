@@ -6,3 +6,17 @@
     border-radius: 1em;
     text-align: center;
 }
+
+.filter input {
+    width: 98%;
+    border: none;
+    border-radius: 0.2em;
+    font-size: 30px;
+}
+
+.contacts {
+    width: 100%;
+    margin-top: 1em;
+    background-color: #fff;
+    height: 80%;
+}

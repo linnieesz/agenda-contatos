@@ -12,7 +12,7 @@ import { ContactInfoComponent } from './pages/contact-info/contact-info.componen
 import { AboutComponent } from './pages/about/about.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 import { UserService } from './shared/service/user-service/user.service';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,6 +28,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     HttpClientModule, 
     FormsModule,
   ],

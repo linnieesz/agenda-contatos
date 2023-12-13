@@ -9,7 +9,7 @@ import { UserProfileComponent } from './pages/user-profile/user-profile.componen
 import { ContactListComponent } from './pages/contact-list/contact-list.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  // { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'agenda-contatos', component: ContactListComponent },
   { path: 'login', component: LoginComponent },

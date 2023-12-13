@@ -1,7 +1,39 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
+.info-msg,
+.success-msg,
+.warning-msg,
+.error-msg {
+    text-align: center;
+    margin: 0.5em 10em;
+    padding: 10px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.info-msg {
+    color: #059;
+    background-color: #BEF;
+}
+
+.success-msg {
+    color: #270;
+    background-color: #DFF2BF;
+}
+
+.warning-msg {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+
+.error-msg {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
 :root {
     --blue: #6ec0ec;
     --light-blue: #aad8f1;
-    font-family: 'Inter', sans-serif; 
+    font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -12,4 +44,3 @@ body {
     width: 100%;
     min-width: 1200px;
 }
-

@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { User } from 'src/app/shared/payload/user-payload/user-payload.model';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AuthenticationService } from 'src/app/shared/service/auth-service/authentication.service';
-import { UserService } from 'src/app/shared/service/user-service/user.service';
 
 @Component({
   selector: 'app-login',
@@ -10,34 +9,41 @@ import { UserService } from 'src/app/shared/service/user-service/user.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  selectedName: string = '';
-  selectedEmail: string = '';
-  selectedPassword: string = '';
-  selectedBirthday: string = '';
 
-  username: string = '';
-  password: string = '';
+  formLogin: FormGroup = new FormGroup({
+    username: new FormControl(''),
+    password: new FormControl('')
+  });
 
-  constructor(private authService: AuthenticationService) { }
+  registerSuccess: boolean;
+  registerError: boolean;
+
+  submitted = false;
+
+  constructor(private fb: FormBuilder, private router: Router, private authService: AuthenticationService) { }
   
   ngOnInit() {
+    this.formLogin = this.fb.group({
+      username: ["", [Validators.required, Validators.minLength(5)]],
+      password: ["", [Validators.required, Validators.minLength(5)]]
+    })
   }
 
-  login() {
-    const credentials = { username: this.username, password: this.password };
 
-    this.authService.login(credentials).subscribe(
-      (response) => {
-        // Manipule a resposta aqui, por exemplo, armazenando o token JWT em localStorage
-        console.log('Resposta do login:', response);
-      },
-      (error) => {
-        // Trate erros de autenticação
-        console.error('Erro de autenticação:', error);
-      }
-    );
-    console.log('nome:', this.username)
-    console.log('senha:', this.password)
+  isFormControlInvalid(controlName: string): boolean {
+    return (this.formLogin.get(controlName)?.invalid && this.formLogin.get(controlName)?.touched)
+  }
+
+  onSubmit(): void {
+
+    if (this.formLogin.valid) {
+      this.submitted = true;
+      this.router.navigate(['/home'])
+    }
+    if (this.formLogin.invalid) {
+      return;
+    }
+
   }
 
 }
